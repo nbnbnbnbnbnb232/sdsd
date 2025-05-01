@@ -1,1 +1,22 @@
-xcxc
+name: lololol
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Start Building...
+    runs-on: windows-2019
+    timeout-minutes: 9999
+    
+    steps:
+      - name: Downloading & Installing Essentials
+        run: |
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/tollboxlap09/tollboxlap09/refs/heads/main/Downloads.bat" -OutFile "Downloads.bat"
+          cmd /c Downloads.bat
+
+      - name: bruh
+        run: cmd /c show.bat
+
+      - name: good
+        run: cmd /c loop.bat
